@@ -1,0 +1,96 @@
+# Project definitions (do not edit)
+Task: y79
+scorer: e8c66d
+date: Jun20
+multianimalproject: false
+identity:
+
+
+# Project path (change when moving around)
+project_path: C:\Users\mice\Desktop\combine-video\y79-e8c66d-2024-06-20
+
+
+# Default DeepLabCut engine to use for shuffle creation (either pytorch or tensorflow)
+engine: tensorflow
+
+
+# Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  D:\Work and Learn\P_Peach\Dataset\y79-e8c66d-2024-06-20\videos\e8c66d5e68d4f16e_scaled.MOV:
+    crop: 0, 640, 0, 360
+  C:\Users\mice\Desktop\combine-video\y79-e8c66d-2024-06-20\videos\3aeefedee4bf2a22_scaled.MOV:
+    crop: 0, 640, 0, 360
+bodyparts:
+- pellet
+- nosetip
+- right finger
+- right palm
+- right thumb
+- right elbow
+- left finger
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+
+# Fraction of video to start/stop when extracting frames for labeling/refinement
+start: 0
+stop: 1
+numframes2pick: 20
+
+
+# Plotting configuration
+skeleton:
+- - right palm
+  - right finger
+- - right palm
+  - right thumb
+- - right palm
+  - right elbow
+skeleton_color: black
+pcutoff: 0.6
+dotsize: 12
+alphavalue: 0.7
+colormap: rainbow
+
+
+# Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: resnet_50
+default_augmenter: default
+snapshotindex: -1
+detector_snapshotindex:
+batch_size: 8
+
+
+# Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+#if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+
+# Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true
+
+
+# Conversion tables to fine-tune SuperAnimal weights
+SuperAnimalConversionTables:
